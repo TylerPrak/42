@@ -1,23 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tprak <tprak@student.42.us.org>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/06/09 03:59:01 by tprak             #+#    #+#             */
-/*   Updated: 2017/06/09 05:06:14 by tprak            ###   ########.fr       */
+/*   Created: 2017/06/09 04:53:38 by tprak             #+#    #+#             */
+/*   Updated: 2017/06/09 05:05:37 by tprak            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <libft.h>
 
-char	*ft_strchr(const char *s, int c)
+char	*strrchr(const char *s, int c)
 {
 	int i;
 
-	i = -1;
-	while (++i < (int)ft_strlen(s) + 1)
+	i = (int)ft_strlen(s) + 1;
+	while (i-- > 0)
 		if (*(s + i) == (char)c)
 			return ((char*)s + i);
 	return (NULL);
