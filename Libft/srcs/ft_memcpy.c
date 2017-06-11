@@ -1,36 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tprak <tprak@student.42.us.org>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/06/10 17:15:58 by tprak             #+#    #+#             */
-/*   Updated: 2017/06/11 05:43:24 by tprak            ###   ########.fr       */
+/*   Created: 2017/06/11 06:41:14 by tprak             #+#    #+#             */
+/*   Updated: 2017/06/11 06:48:26 by tprak            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <libft.h>
 
-int		ft_atoi(const char *str)
+void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
-	int num;
-	int negcheck;
+	unsigned char *str;
 
-	num = 0;
-	negcheck = 1;
-	while (*str == '\t' || *str == '\v' || *str == '\f'
-		|| *str == '\r' || *str == '\n' || *str == ' ')
-		str++;
-	if (*str == '-')
-		negcheck = -1;
-	if (*str == '-' || *str == '+')
-		str++;
-	while (*str >= '0' && *str <= '9')
+	str = (unsigned char*)dst;
+	while (n-- > 0)
 	{
-		num *= 10;
-		num += *str - '0';
-		str++;
+		*str++ = *(unsigned char*)src++;
 	}
-	return (num *= negcheck);
+	return (dst);
 }
