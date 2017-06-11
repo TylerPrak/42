@@ -6,13 +6,13 @@
 /*   By: tprak <tprak@student.42.us.org>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/06/09 04:53:38 by tprak             #+#    #+#             */
-/*   Updated: 2017/06/09 05:05:37 by tprak            ###   ########.fr       */
+/*   Updated: 2017/06/11 04:41:25 by tprak            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <libft.h>
 
-char	*strrchr(const char *s, int c)
+char	*ft_strrchr(const char *s, int c)
 {
 	int i;
 
