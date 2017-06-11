@@ -6,13 +6,13 @@
 /*   By: tprak <tprak@student.42.us.org>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/06/10 22:20:28 by tprak             #+#    #+#             */
-/*   Updated: 2017/06/10 22:38:48 by tprak            ###   ########.fr       */
+/*   Updated: 2017/06/10 22:41:27 by tprak            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <libft.h>
 
-char	*ft_strcat(char *s1, const char *s2, size_t n)
+char	*ft_strncat(char *s1, const char *s2, size_t n)
 {
 	int i;
 	int j;
