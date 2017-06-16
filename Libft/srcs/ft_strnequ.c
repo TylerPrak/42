@@ -6,7 +6,7 @@
 /*   By: tprak <tprak@student.42.us.org>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/06/15 21:40:43 by tprak             #+#    #+#             */
-/*   Updated: 2017/06/15 21:50:36 by tprak            ###   ########.fr       */
+/*   Updated: 2017/06/15 23:18:00 by tprak            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,6 @@ int		ft_strnequ(char const *s1, char const *s2, size_t n)
 		n--;
 	}
 	if ((*s1 == '\0' && *s2 == '\0') || n == 0)
-		return 1;
-	return 0;
+		return (1);
+	return (0);
 }
