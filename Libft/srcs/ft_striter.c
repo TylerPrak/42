@@ -6,13 +6,13 @@
 /*   By: tprak <tprak@student.42.us.org>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/06/15 14:23:45 by tprak             #+#    #+#             */
-/*   Updated: 2017/06/15 14:24:33 by tprak            ###   ########.fr       */
+/*   Updated: 2017/06/16 03:19:55 by tprak            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_striter(char *s, void(*f)(char *))
+void	ft_striter(char *s, void (*f)(char *))
 {
 	size_t i;
 
