@@ -6,7 +6,7 @@
 /*   By: tprak <tprak@student.42.us.org>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/06/16 03:56:33 by tprak             #+#    #+#             */
-/*   Updated: 2017/06/16 03:58:03 by tprak            ###   ########.fr       */
+/*   Updated: 2017/06/16 04:06:39 by tprak            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,6 @@
 
 void	ft_putendl_fd(char const *s, int fd)
 {
-	ft_putstr(s, fd);
+	ft_putstr_fd(s, fd);
 	write(1, "\n", 1);
 }

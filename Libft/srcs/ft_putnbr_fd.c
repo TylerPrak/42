@@ -1,24 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
+/*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tprak <tprak@student.42.us.org>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/06/16 03:53:56 by tprak             #+#    #+#             */
-/*   Updated: 2017/06/16 04:06:23 by tprak            ###   ########.fr       */
+/*   Created: 2017/06/16 03:09:48 by tprak             #+#    #+#             */
+/*   Updated: 2017/06/16 04:09:52 by tprak            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putstr_fd(char const *s, int fd)
+void	ft_putnbr_fd(int n)
 {
-	if (!s)
-		return ;
-	while (*s)
+	if (n == -2147483648)
 	{
-		ft_putchar_fd(*s, fd);
-		s++;
+		ft_putstr_fd("-2147483648", fd);
+		return ;
 	}
+	if (n < 0)
+	{
+		ft_putchar_fd('-', fd);
+		n *= -1;
+	}
+	if (n > 9)
+	{
+		ft_putnbr_fd(n / 10, fd);
+		ft_putnbr_fd(n % 10, fd);
+	}
+	else
+		ft_putnbr_fd(n + '0', fd);
 }
