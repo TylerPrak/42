@@ -6,11 +6,11 @@
 /*   By: tprak <tprak@student.42.us.org>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/06/11 23:03:21 by tprak             #+#    #+#             */
-/*   Updated: 2017/06/13 03:52:18 by tprak            ###   ########.fr       */
+/*   Updated: 2017/06/22 05:35:12 by tprak            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 void	*ft_memccpy(void *dst, const void *src, int c, size_t n)
 {

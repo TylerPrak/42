@@ -6,11 +6,11 @@
 /*   By: tprak <tprak@student.42.us.org>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/06/09 03:59:01 by tprak             #+#    #+#             */
-/*   Updated: 2017/06/09 05:06:14 by tprak            ###   ########.fr       */
+/*   Updated: 2017/06/22 05:37:51 by tprak            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 char	*ft_strchr(const char *s, int c)
 {

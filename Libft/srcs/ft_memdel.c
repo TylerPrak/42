@@ -6,11 +6,11 @@
 /*   By: tprak <tprak@student.42.us.org>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/06/14 21:17:26 by tprak             #+#    #+#             */
-/*   Updated: 2017/06/14 21:18:27 by tprak            ###   ########.fr       */
+/*   Updated: 2017/06/22 05:36:03 by tprak            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 void	ft_memdel(void **ap)
 {

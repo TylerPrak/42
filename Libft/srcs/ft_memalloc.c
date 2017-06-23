@@ -6,11 +6,11 @@
 /*   By: tprak <tprak@student.42.us.org>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/06/14 19:06:43 by tprak             #+#    #+#             */
-/*   Updated: 2017/06/14 19:08:49 by tprak            ###   ########.fr       */
+/*   Updated: 2017/06/22 05:34:50 by tprak            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 void	*ft_memalloc(size_t size)
 {

@@ -6,16 +6,16 @@
 /*   By: tprak <tprak@student.42.us.org>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/06/11 22:04:20 by tprak             #+#    #+#             */
-/*   Updated: 2017/06/11 22:06:42 by tprak            ###   ########.fr       */
+/*   Updated: 2017/06/22 05:35:23 by tprak            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {
-	unsigned char *str;
-	size_t i;
+	unsigned char	*str;
+	size_t			i;
 
 	i = -1;
 	str = (unsigned char*)s;

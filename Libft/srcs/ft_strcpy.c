@@ -6,11 +6,11 @@
 /*   By: tprak <tprak@student.42.us.org>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/06/08 19:52:14 by tprak             #+#    #+#             */
-/*   Updated: 2017/06/08 19:57:20 by tprak            ###   ########.fr       */
+/*   Updated: 2017/06/22 05:38:36 by tprak            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 char	*ft_strcpy(char *dst, const char src)
 {

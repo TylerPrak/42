@@ -6,11 +6,11 @@
 /*   By: tprak <tprak@student.42.us.org>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/06/13 02:57:35 by tprak             #+#    #+#             */
-/*   Updated: 2017/06/13 03:48:53 by tprak            ###   ########.fr       */
+/*   Updated: 2017/06/22 05:41:38 by tprak            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 size_t		ft_strlcat(char *dst, const char *src, size_t size)
 {

@@ -6,11 +6,11 @@
 /*   By: tprak <tprak@student.42.us.org>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/06/14 21:56:15 by tprak             #+#    #+#             */
-/*   Updated: 2017/06/14 21:57:24 by tprak            ###   ########.fr       */
+/*   Updated: 2017/06/22 05:43:26 by tprak            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 char	*ft_strnew(size_t size)
 {

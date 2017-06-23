@@ -6,7 +6,7 @@
 /*   By: tprak <tprak@student.42.us.org>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/06/21 16:18:40 by tprak             #+#    #+#             */
-/*   Updated: 2017/06/21 16:20:33 by tprak            ###   ########.fr       */
+/*   Updated: 2017/06/22 04:29:34 by tprak            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,6 @@
 
 void	ft_lstadd(t_list **alst, t_list *new)
 {
-	new -> next = *alst;
+	new->next = *alst;
 	*alst = new;
 }

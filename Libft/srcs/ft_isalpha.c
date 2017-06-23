@@ -6,11 +6,11 @@
 /*   By: tprak <tprak@student.42.us.org>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/06/09 05:34:37 by tprak             #+#    #+#             */
-/*   Updated: 2017/06/09 05:35:41 by tprak            ###   ########.fr       */
+/*   Updated: 2017/06/22 05:32:44 by tprak            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 int		ft_isalpha(int c)
 {

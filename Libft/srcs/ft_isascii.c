@@ -6,11 +6,11 @@
 /*   By: tprak <tprak@student.42.us.org>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/06/09 22:47:26 by tprak             #+#    #+#             */
-/*   Updated: 2017/06/09 22:48:34 by tprak            ###   ########.fr       */
+/*   Updated: 2017/06/22 05:33:01 by tprak            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 int		ft_isascii(int c)
 {

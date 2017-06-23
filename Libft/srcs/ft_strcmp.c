@@ -6,11 +6,11 @@
 /*   By: tprak <tprak@student.42.us.org>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/06/10 15:01:25 by tprak             #+#    #+#             */
-/*   Updated: 2017/06/10 15:02:30 by tprak            ###   ########.fr       */
+/*   Updated: 2017/06/22 05:38:19 by tprak            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 int		ft_strcmp(const char *s1, const char *s2)
 {

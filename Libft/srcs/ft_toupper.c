@@ -6,11 +6,11 @@
 /*   By: tprak <tprak@student.42.us.org>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/06/08 20:45:55 by tprak             #+#    #+#             */
-/*   Updated: 2017/06/08 20:46:46 by tprak            ###   ########.fr       */
+/*   Updated: 2017/06/22 05:45:55 by tprak            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 int		ft_toupper(int c)
 {

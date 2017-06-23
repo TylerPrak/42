@@ -6,11 +6,11 @@
 /*   By: tprak <tprak@student.42.us.org>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/06/10 17:15:58 by tprak             #+#    #+#             */
-/*   Updated: 2017/06/11 05:43:24 by tprak            ###   ########.fr       */
+/*   Updated: 2017/06/22 05:31:48 by tprak            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 int		ft_atoi(const char *str)
 {

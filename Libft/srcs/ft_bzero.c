@@ -6,11 +6,11 @@
 /*   By: tprak <tprak@student.42.us.org>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/06/12 22:47:57 by tprak             #+#    #+#             */
-/*   Updated: 2017/06/12 22:49:01 by tprak            ###   ########.fr       */
+/*   Updated: 2017/06/22 05:32:14 by tprak            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 void	ft_bzero(void *s, size_t n)
 {
