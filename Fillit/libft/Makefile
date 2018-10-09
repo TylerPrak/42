@@ -26,15 +26,15 @@ INCLD = libft.h
 all: $(NAME)
 
 $(NAME) :
-	$(CC) $(CCFLAGS) $(SRC) -I $(INCLD)
-	ar rc $(NAME) $(OS)
+	@$(CC) $(CCFLAGS) $(SRC) -I $(INCLD)
+	@ar rc $(NAME) $(OS)
 	ranlib $(NAME)
 
 clean : 
-	/bin/rm -f $(OS)
+	@/bin/rm -f $(OS)
 
 fclean : clean
-	/bin/rm -f $(NAME)
+	@/bin/rm -f $(NAME)
 
 re : fclean all
 

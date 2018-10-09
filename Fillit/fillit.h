@@ -6,7 +6,7 @@
 /*   By: tprak <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/07/29 12:56:42 by tprak             #+#    #+#             */
-/*   Updated: 2017/09/18 01:29:32 by tprak            ###   ########.fr       */
+/*   Updated: 2017/09/26 22:45:52 by tprak            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,7 +57,7 @@ typedef struct		s_varible
 int					ft_error();
 int					ft_read(t_tet_piece *tetris, t_var *vl, int i);
 void				ft_hash_to_letter(char *buf, int i, char c);
-int					ft_valid_lines(char *buf);
+int					ft_valid_lines(char *buf, int lines);
 int					ft_valid_tetris(char *buf);
 int					ft_check_hash_up(char *buf, int i);
 int					ft_check_hash_right(char *buf, int i);

@@ -11,16 +11,16 @@ INCLD = -I libft -L libft -lft
 all: $(NAME)
 
 $(NAME) : $(OBJ)
-	make all -C libft
-	$(CC) -c $(SRC)
+	@make all -C libft
+	@$(CC) -c $(SRC)
 	$(CC) $(OBJ) -o fillit $(INCLD)
 
 clean:
-	make clean -C libft
-	/bin/rm -f $(OBJ)
+	@make clean -C libft
+	@/bin/rm -f $(OBJ)
 
 fclean: clean
-	make fclean -C libft
-	/bin/rm -f $(NAME)
+	@make fclean -C libft
+	@/bin/rm -f $(NAME)
 
 re: fclean all

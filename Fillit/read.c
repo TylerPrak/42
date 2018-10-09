@@ -6,7 +6,7 @@
 /*   By: tprak <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/22 04:52:00 by tprak             #+#    #+#             */
-/*   Updated: 2017/09/15 05:46:52 by tprak            ###   ########.fr       */
+/*   Updated: 2017/09/26 22:48:52 by tprak            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ int		ft_read(t_tet_piece *tetris, t_var *vl, int i)
 	while (((ret = read(vl->fd, buf, BUF_SIZE)) != 0) && i < 27)
 	{
 		buf[ret] = '\0';
-		if (!(ft_valid_lines(buf) == 1 && ft_valid_tetris(buf) == 1))
+		if (!(ft_valid_lines(buf, 0) == 1 && ft_valid_tetris(buf) == 1))
 			return (-1);
 		ft_strcpy(tetris[i].buf, buf);
 		ft_hash_to_letter(tetris[i].buf, 0, LETTER(i));

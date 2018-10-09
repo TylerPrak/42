@@ -6,11 +6,12 @@
 /*   By: tprak <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/07/30 14:43:39 by tprak             #+#    #+#             */
-/*   Updated: 2017/09/15 05:38:44 by tprak            ###   ########.fr       */
+/*   Updated: 2017/09/26 21:21:29 by tprak            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "fillit.h"
+#include <stdio.h>
 
 int		ft_count_connections(char *buf, int i)
 {
@@ -28,26 +29,30 @@ int		ft_count_connections(char *buf, int i)
 	return (count);
 }
 
-int		ft_valid_lines(char *buf)
+int		ft_valid_lines(char *buf, int lines)
 {
 	int i;
 	int hashcount;
 
 	hashcount = 0;
 	i = 0;
-	while (buf[i] != '\0' || buf[i] == '.' || buf[i] == '#' || buf[i] == '\n')
+	while (buf[i] != '\0')
 	{
+		if (!(buf[i] == '.' || buf[i] == '#' || buf[i] == '\n'))
+			return (-1);
 		if (buf[4] != '\n' || buf[9] != '\n' || buf[14] != '\n' ||
 			buf[19] != '\n' || (buf[20] != '\n' && buf[20] != '\0'))
-			return (0);
+			return (-1);
 		if (buf[i] == '#')
 			hashcount++;
+		if (buf[i] == '\n')
+			lines++;
 		i++;
 	}
-	if (hashcount == 4)
+	if (hashcount == 4 && (lines == 4 || lines == 5))
 		return (1);
 	else
-		return (0);
+		return (-1);
 }
 
 int		ft_valid_tetris(char *buf)
